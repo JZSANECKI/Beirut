@@ -1,0 +1,20 @@
+*{
+
+}
+body{
+background-color: yelow;
+
+}
+
+.menu-tab{
+    height: 20px;
+    display: inline-block;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+.menu-tab:hover{
+    background-color: aqua;
+}
+.menu-tab-active{
+    background-color:deeppink;
+}
