@@ -1,16 +1,27 @@
 *{
-
+/* margin: 0; */
 }
 body{
-background-color: yelow;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: red;
 
+font-family: sans-serif;
+}
+.wrapper{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2em;
 }
 
 .menu-tab{
+    padding: 0.5em;
     height: 20px;
     display: inline-block;
     background-color: blueviolet;
     cursor: pointer;
+    transition: background-color 300ms;
 }
 .menu-tab:hover{
     background-color: aqua;
