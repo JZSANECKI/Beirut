@@ -22,7 +22,7 @@ if (top >=offset && top < offset + height){
 
 })
 
-if (scrollY >= 150){
+if (scrollY >= 300){
     callBtn.classList.add('call-btn-up')
 }
 else {

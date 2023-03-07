@@ -7,7 +7,7 @@ body{
 /* display: flex; */
 justify-content: center;
 align-items: center;
-background-color: red;
+background-color: white;
 
 font-family: sans-serif;
 }
@@ -44,7 +44,7 @@ header{
     left: 50%;
     font-size: 2em;
     text-decoration: none;
-    color: white;
+    color: black;
     transform: translateX(-50%);
     z-index: 10;
 }
@@ -53,8 +53,9 @@ nav{
     top: 0;
     width: 100%;
     height: 80px;
-    background-color: blue;
+    background-color: black;
     z-index: 200;
+    color: #fff;
 }
 .nav2{
     position: sticky;
@@ -94,18 +95,25 @@ footer{
 }
 .call-btn{
     text-align: center;
-    display:none;
-    width: 50px;
+
+    /* width: 50px; */
     height: 50px;
     border-radius: 50%;
-    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     bottom: 50px;
-    right: 30px;
-    transition: 300ms;
+    right: 0px;
+    transition: 800ms;
+    transform: translateX(100px);
+    opacity: 0;
+   
     
 }
 .call-btn-up{
-    display:block;
-    transition: 300ms;
+    transform: translateX(-50px);
+    opacity: 1;
+    transition: 800ms;
+    transition-delay: 0.5s;
 }
