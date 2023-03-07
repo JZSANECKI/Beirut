@@ -3,8 +3,7 @@ margin: 0;
 scroll-behavior: smooth;
 }
 body{
-    
-/* display: flex; */
+
 justify-content: center;
 align-items: center;
 background-color: white;
@@ -15,11 +14,17 @@ h1{
     font-size: 4rem;
     color: #fff;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .wrapper{
-    /* max-width: 1200px; */
-    background-color: #fff;
+    max-width: 1200px;
+width: 100%;
     border-radius: 10px;
-display: flex;
+
 justify-content: center;
 }
 
@@ -39,7 +44,7 @@ justify-content: center;
 }
 header{
     position: relative;
-    /* padding-top:50px; */
+
     height: 100vh;
     background-image: url(/img/hero_bg.jpg);
 
@@ -47,6 +52,7 @@ header{
    
 }
 .header-section{
+ 
     justify-content: center;
     position: relative;
     z-index: 20;
@@ -55,16 +61,15 @@ header{
     
 }
 .header-content{
+    max-width: 600px;
     padding: 3rem;
     align-items: center;
     justify-content: center;
-    background-color: rgba(150,150,5,0.2);
-    border-style: solid;
-    height: 100%;
-    /* width: 50%; */
-
 }
-
+.header-content p{
+    color: white;
+    font-size: 1rem;
+}
 .dark-canvas{
     z-index: 0;
 position: absolute;
@@ -86,48 +91,58 @@ background-color: rgba(0,0,0,0.6);
 }
 nav{
     position: sticky;
+    display: flex;
+    justify-content: center;
     top: 0;
     width: 100%;
     height: 80px;
-    /* background-color: black; */
+
     z-index: 200;
     color: #fff;
 }
 .nav2{
     position: sticky;
     top: 0px;
-
     width: 100%;
-    background-color: blueviolet;
+    background-color: white;
     text-align: center;
     transition: 300ms;
-    /* height: 40px; */
 }
 .nav2 a{
-padding: 20px;
+padding: 10px 20px;
     line-height: 40px;
     transition: 300ms;
     text-decoration: none;
-    color: #fff;
+    color: black;
+    height: 40px;
+   
 }
+
 .nav2 a:hover,
-.nav2-active{
-    background-color: red;
+.nav2-active,
+.nav2-active {
+    background-color: black;
     transition: 300ms;
+    color: white !important;
+}
+
+.nav2-desktop{
+    display: block;
+}
+.nav2-mobile{
+    display: none;
 }
 .menu{
-    width: 100%;
+    width: 100vw;
     scroll-margin-top: 40px;
     max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+
 }
 .section{
     padding-top: 20px;
     height: 80vh;
     scroll-margin-top: 40px;
-background-color: aqua;
+
 }
 footer{
     background-color: gray;
@@ -170,6 +185,13 @@ padding: 10px;
 .call-btn-up{
     transform: translateX(-20px);
 }
-
-
+.header-section{
+    flex-direction: column;
+}
+.nav2-desktop{
+    /* display: none; */
+}
+.nav2-mobile{
+    display: block;
+}
   }
