@@ -11,11 +11,16 @@ background-color: white;
 
 font-family: sans-serif;
 }
+h1{
+    font-size: 4rem;
+    color: #fff;
+}
 .wrapper{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     background-color: #fff;
     border-radius: 10px;
-    padding: 2em;
+display: flex;
+justify-content: center;
 }
 
 .menu-tab{
@@ -36,7 +41,38 @@ header{
     position: relative;
     /* padding-top:50px; */
     height: 100vh;
+    background-image: url(/img/hero_bg.jpg);
+
+    background-size: cover;
    
+}
+.header-section{
+    justify-content: center;
+    position: relative;
+    z-index: 20;
+    display: flex;
+    height: calc(100% - 80px);
+    
+}
+.header-content{
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(150,150,5,0.2);
+    border-style: solid;
+    height: 100%;
+    /* width: 50%; */
+
+}
+
+.dark-canvas{
+    z-index: 0;
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;   
+width: 100%;
+background-color: rgba(0,0,0,0.6); 
 }
 .menu-trigger{
     position: absolute;
@@ -44,7 +80,7 @@ header{
     left: 50%;
     font-size: 2em;
     text-decoration: none;
-    color: black;
+    color: white;
     transform: translateX(-50%);
     z-index: 10;
 }
@@ -53,7 +89,7 @@ nav{
     top: 0;
     width: 100%;
     height: 80px;
-    background-color: black;
+    /* background-color: black; */
     z-index: 200;
     color: #fff;
 }
@@ -80,12 +116,18 @@ padding: 20px;
     transition: 300ms;
 }
 .menu{
+    width: 100%;
     scroll-margin-top: 40px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .section{
     padding-top: 20px;
     height: 80vh;
     scroll-margin-top: 40px;
+background-color: aqua;
 }
 footer{
     background-color: gray;
@@ -95,17 +137,17 @@ footer{
 }
 .call-btn{
     text-align: center;
-
-    /* width: 50px; */
-    height: 50px;
+padding: 10px;
+    border-width: 1px;
+    height: 40px;
     border-radius: 50%;
     border-style: solid;
-    border-color: black;
+    border-color: grey;
     background-color: rgb(255, 255, 255);
     position: fixed;
     bottom: 50px;
     right: 0px;
-    transition: 800ms;
+    transition:300ms;
     transform: translateX(100px);
     opacity: 0;
    
@@ -114,6 +156,20 @@ footer{
 .call-btn-up{
     transform: translateX(-50px);
     opacity: 1;
-    transition: 800ms;
+    transition: 1s;
     transition-delay: 0.5s;
 }
+
+
+@media (max-width: 576px) {
+
+.call-btn{
+    height: 40px;
+    padding: 5px;
+}
+.call-btn-up{
+    transform: translateX(-20px);
+}
+
+
+  }
