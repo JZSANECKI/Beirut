@@ -201,6 +201,7 @@ padding: 0.5rem 1rem;
 text-align: center;
 color: black;
 text-transform: uppercase;
+transition: 300ms;
 }
 .menu-btn:hover{
  
