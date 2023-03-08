@@ -10,10 +10,17 @@ background-color: white;
 
 font-family: sans-serif;
 }
-h1{
+h1,h2{
     font-family: 'Berkshire Swash', cursive;
     font-size: 4rem;
+}
+h1{
+
     color: #fff;
+}
+h2{
+    padding: 1rem;
+    color: black;
 }
 p{
     font-family: 'Montserrat', sans-serif;
@@ -52,16 +59,23 @@ justify-content: center;
 }
 header{
     position: relative;
-
+display: flex;
+flex-direction: column;
+align-items: center;
     height: 100vh;
     background-image: url(/img/pita_front.jpg);
 background-position: center;
     background-size: cover;
+max-height: 80vw;
+
+ 
+
    
 }
 .header-section{
- 
-    justify-content: center;
+    width: 100%;
+ max-width: 1200px;
+    justify-content: start;
     position: relative;
     z-index: 20;
     display: flex;
@@ -69,17 +83,17 @@ background-position: center;
     
 }
 .header-content{
-     max-width: 600px;
+     max-width: 400px;
     padding: 5rem 3rem;
     align-items: center;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    /* width: 40%; */
 }
 .header-content p{
     color: white;
     font-size: 1rem;
-    padding-right: 3rem;
+    /* padding-right: 3rem; */
 
 }
 .dark-canvas{
@@ -117,11 +131,12 @@ nav a{
 .logo-w{
    height: 80%; 
    padding: 1rem 0rem 0rem 3rem;
+   
 
 
 }
 .nav-logo{
-    width: 50%;
+ max-width: 200px;
 }
 .nav-menu{
    margin-top:auto;
@@ -148,6 +163,7 @@ display: block;
     background-color: white;
     text-align: center;
     transition: 300ms;
+    max-width: 1200px;
 }
 .nav2 a{
 padding: 10px 20px;
@@ -160,11 +176,12 @@ padding: 10px 20px;
 }
 
 .nav2 a:hover,
-.nav2-active,
 .nav2-active {
     background-color: black;
     transition: 300ms;
     color: white !important;
+    border-radius: 5px;
+    
 }
 
 .nav2-desktop{
@@ -216,7 +233,7 @@ padding: 10px;
 .menu-btn-container{
     display: flex;
     justify-content: end;
-    padding: 3rem 5rem;
+    padding: 3rem 1rem;
 }
 .menu-btn{
     border: none;
@@ -235,6 +252,14 @@ transition: 300ms;
     background-color: rgba(255,255,255,0.1);
 }
 
+@media (max-width: 992px) {
+
+header{
+
+}
+    
+
+}
 
 
 @media (max-width: 576px) {
