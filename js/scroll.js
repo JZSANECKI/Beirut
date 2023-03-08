@@ -1,6 +1,6 @@
 const section = document.querySelectorAll('section')
 const navLink = document.querySelectorAll('.nav2 a')
-const callBtn = document.querySelector('.call-btn')
+const homeBtn = document.querySelector('.home-btn')
 
 
 window.onscroll = () => {
@@ -23,10 +23,10 @@ if (top >=offset && top < offset + height){
 })
 
 if (scrollY >= 300){
-    callBtn.classList.add('call-btn-up')
+    homeBtn.classList.add('home-btn-up')
 }
 else {
-    callBtn.classList.remove('call-btn-up')
+    homeBtn.classList.remove('home-btn-up')
 }
 console.log(scrollY)
 
