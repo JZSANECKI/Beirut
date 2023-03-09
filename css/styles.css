@@ -185,10 +185,10 @@ padding: 10px 20px;
     display: none;
 }
 .menu{
-    width: 100vw;
+    /* width: 100vw; */
     scroll-margin-top: 160px;
-    max-width: 1000px;
-    padding: 0 1rem;
+    max-width: 1200px;
+    padding: 0 2rem;
 
 }
 .menu-section{
@@ -209,7 +209,7 @@ padding: 10px 20px;
     /* background-color: aqua; */
     /* height: 30px; */
     flex-grow: 1;
-    /* width: 50%; */
+    width: 11rem;
 }
 .menu-section-price p{
     font-weight:bolder;
@@ -218,6 +218,7 @@ padding: 10px 20px;
     padding-top: 20px;
     min-height: 80vh;
     scroll-margin-top: 160px;
+    width: 100%;
 
 
 }
@@ -327,5 +328,12 @@ header{
 }
 .menu-section{
     flex-direction: column;
+}
+.menu-section-price{
+    text-align: left;
+    padding-top: 0.5rem;
+}
+.menu{
+    padding: 0 1rem;
 }
   }
