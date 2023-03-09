@@ -100,6 +100,13 @@ display: block;
     /* padding-right: 3rem; */
 
 }
+.header-content-mobile{
+    padding: 0 1rem;
+
+}
+.header-content-mobile p{
+text-align: center;
+}
 .dark-canvas{
     z-index: 0;
 position: absolute;
@@ -126,9 +133,10 @@ nav a{
 .logo-w{
    height: 80%; 
    padding: 1rem 0rem 0rem 3rem;
-   
-
-
+}
+.logo-mobile{
+    width: 30%;
+    padding: 1rem 0;
 }
 .nav-logo{
  max-width: 200px;
@@ -295,6 +303,12 @@ transition: 300ms;
     color: #fff;
     background-color: rgba(255,255,255,0.1);
 }
+.content-desktop{
+   
+}
+.content-mobile{
+    display: none;
+}
 
 @media (max-width: 992px) {
 
@@ -323,6 +337,13 @@ transition: 300ms;
 }
 
 @media (max-width: 576px) {
+    h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
 
 .call-btn{
     height: 40px;
@@ -356,9 +377,18 @@ transition: 300ms;
 }
 header{
     max-height: none;
+    background-image: url(/img/pita_front_mobile.jpg);
+    background-position: center;
 }
 .header-content{
     padding: 5rem 1rem;
 }
+.content-desktop{
+display: none;
 }
+.content-mobile{
+    display: inline;
+    text-align: center;
 
+
+}
