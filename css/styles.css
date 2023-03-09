@@ -31,7 +31,8 @@ h3{
     font-weight: bold;
     font-size: 2rem;
 }
-main{
+main,
+.main2{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,6 +240,8 @@ footer{
     padding: 1rem;
     color: #fff;
 overflow: hidden;
+position: relative;
+z-index: 200;
     
 }
 .logo-f{
@@ -342,6 +345,15 @@ transition: 300ms;
         text-align: center;
         padding: 1rem 0 2rem 0;
     }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
     p{
         text-align: center;
     }
@@ -369,7 +381,8 @@ transition: 300ms;
 .menu-section{
     flex-direction: column;
 }
-.menu-section-price{
+.menu-section-name p,
+.menu-section-price p{
     text-align: left;
     padding-top: 0.5rem;
 }
@@ -391,10 +404,35 @@ display: none;
     display: inline;
     text-align: center;
     padding: 0 1rem;
-
-
+}
+.content-mobile a{
+    color: white;
+    text-decoration: none;
+    line-height: 45px;
+    padding: 0 1rem;
 }
 .menu-btn-container{
 justify-content: center;
+}
+.home-btn{
+    scale: 0.8;
+    bottom: 10px;
+    right: 0px;
+    transition:300ms;
+    transform: translateX(-0px);
+}
+.logo-f{
+    width: 30%;
+}
+footer{
+    flex-direction: column;
+    height: 100%;
+}
+.footer-section{
+    text-align: center;
+    display: block;
+    padding: 1rem;
+
+
 }
 }
