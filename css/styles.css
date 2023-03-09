@@ -136,7 +136,7 @@ nav a{
 }
 .logo-mobile{
     width: 30%;
-    padding: 1rem 0;
+    padding: 1rem 0 0.5rem 0;
 }
 .nav-logo{
  max-width: 200px;
@@ -340,6 +340,7 @@ transition: 300ms;
     h1{
         font-size: 3rem;
         text-align: center;
+        padding: 1rem 0 2rem 0;
     }
     p{
         text-align: center;
@@ -389,7 +390,11 @@ display: none;
 .content-mobile{
     display: inline;
     text-align: center;
+    padding: 0 1rem;
 
 
+}
+.menu-btn-container{
+justify-content: center;
 }
 }
