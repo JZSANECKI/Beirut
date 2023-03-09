@@ -66,11 +66,8 @@ align-items: center;
     background-image: url(/img/pita_front.jpg);
 background-position: center;
     background-size: cover;
-max-height: 80vw;
-
- 
-
-   
+max-height: 60vw;
+  
 }
 .header-section{
     width: 100%;
@@ -105,18 +102,9 @@ height: 100%;
 width: 100%;
 background-color: rgba(0,0,0,0.4); 
 }
-.menu-trigger{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    font-size: 2em;
-    text-decoration: none;
-    color: white;
-    transform: translateX(-50%);
-    z-index: 10;
-}
+
 nav{
-    position: sticky;
+    position: relative;
     display: flex;
     justify-content: center;
     top: 0;
@@ -192,14 +180,14 @@ padding: 10px 20px;
 }
 .menu{
     width: 100vw;
-    scroll-margin-top: 40px;
+    scroll-margin-top: 160px;
     max-width: 1000px;
 
 }
 .section{
     padding-top: 20px;
     height: 80vh;
-    scroll-margin-top: 40px;
+    scroll-margin-top: 160px;
 
 }
 footer{
@@ -212,8 +200,8 @@ footer{
     text-align: center;
 padding: 10px;
     border-width: 1px;
-    height: 40px;
-    border-radius: 50%;
+color: black;
+    border-radius: 2rem;
     border-style: solid;
     border-color: grey;
     background-color: rgb(255, 255, 255);
@@ -222,13 +210,26 @@ padding: 10px;
     right: 0px;
     transition:300ms;
     transform: translateX(100px);
-    opacity: 0;  
+    opacity: 0; 
+    display: flex;
+    align-items: center; 
+z-index: 100;
+    transition: transform 0.3s, opacity 0.3s;
 }
 .home-btn-up{
     transform: translateX(-50px);
     opacity: 1;
-    transition: 1s;
-    transition-delay: 0.5s;
+    transition: transform 1s, opacity 1s, filter 0.3s;
+    transition-delay:transform 0.5s, opacity 0.5s;
+}
+.home-btn p{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+.home-btn:hover{
+filter: invert(1);
+
 }
 .menu-btn-container{
     display: flex;
@@ -236,18 +237,21 @@ padding: 10px;
     padding: 3rem 1rem;
 }
 .menu-btn{
-    border: none;
+    border: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  white;
 border-radius: 5px;
 cursor: pointer;
 font-weight: bold;
-padding: 0.5rem 1rem;
+padding: 1rem 1.5rem;
 text-align: center;
 color: black;
 text-transform: uppercase;
 transition: 300ms;
 }
 .menu-btn:hover{
- 
+
     color: #fff;
     background-color: rgba(255,255,255,0.1);
 }
@@ -257,7 +261,10 @@ transition: 300ms;
 header{
 
 }
+.home-btn:hover{
+    filter: invert(0);
     
+    }   
 
 }
 
