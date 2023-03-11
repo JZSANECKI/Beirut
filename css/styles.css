@@ -86,9 +86,9 @@ background-position: center;
     width: 100%;
  max-width: 1200px;
     justify-content: start;
-    align-items:flex-end;
-    align-items:flex-end;
-    align-items:flex-end;
+    align-items: start;
+flex-direction: row;
+
     position: relative;
     z-index: 20;
     display: flex;
@@ -396,6 +396,7 @@ transition: 300ms;
 
     h1{
         text-align: center;
+        padding-bottom:2rem;
     }
 .header-content{
 width: 100%;
@@ -435,7 +436,7 @@ max-width: none;
     h1{
         font-size: 13vw;
         text-align: center;
-        padding: 0 0 1rem 0;
+        padding:0 0 3rem 0;
     }
     h2{
         font-size: 2rem;
@@ -459,18 +460,31 @@ max-width: none;
 .call-btn-up{
     transform: translateX(-20px);
 }
+header{
+    height: 100vh;
+
+    background-image: url("../img/pita_front_mobile.jpg");
+    background-position: center;
+}
 .header-section{
 
-    display: flex;
-    flex-direction: column;
-    /* padding: 1rem; */
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+        height: 100%;
+    }
+    .header-section p{
+        text-align: center;
+        padding: 0;
+        font-size: 1rem;
+    }
+.header-content{
+
+    /* margin: auto; */
+    padding: 3rem 1rem;
+
 }
-.header-section p{
-    text-align: center;
-    padding: 0;
-    font-size: 1rem;
-}
+
 
 
 
@@ -496,18 +510,7 @@ max-width: none;
     padding: 0 1rem;
         scroll-margin-top: 100px;
 }
-header{
-    height: 100vh;
 
-    background-image: url("../img/pita_front_mobile.jpg");
-    background-position: center;
-}
-.header-content{
-
-    /* margin: auto; */
-    padding: 8rem 1rem 2rem 1rem;
-
-}
 .content-desktop{
 display: none;
 }
@@ -515,13 +518,14 @@ display: none;
     display: inline;
     text-align: center;
     padding: 0 ;
-    width: 60vw;
+    width: fit-content;
 }
 .content-mobile a{
     color: white;
     text-decoration: none;
     line-height: 45px;
-    padding: 0 1rem;
+    padding: 0 0.7rem;
+
 }
 .menu-btn-container{
 justify-content: center;
