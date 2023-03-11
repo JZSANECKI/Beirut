@@ -6,7 +6,7 @@ body{
 
 justify-content: center;
 align-items: center;
-background-color: white;
+background-color: rgb(255, 255, 255);
 
 font-family: sans-serif;
 }
@@ -16,9 +16,20 @@ h1,h2{
 }
 
 h1{
-/* font-weight: lighter; */
-text-align: right;
-    color: #fff;
+
+
+font-size: 13vw;
+text-align: center;
+background-image: url(../img/ogien.gif);
+
+background-size:cover;
+background-position:bottom;
+background-clip:text;
+-webkit-background-clip:text;
+/* color: rgba(255,255,255,0.1); */
+/* color: rgba(0,0,0,0.5); */
+color: transparent;
+
 }
 h2{
     padding: 1rem;
@@ -69,14 +80,14 @@ justify-content: center;
 header{
 
 
-height: fit-content;
+height: 100vh;
 
     position: relative;
 display: flex;
 flex-direction: column;
 align-items: center;
     /* height: 100vh; */
-    background-image: url(../img/pita_front.jpg);
+    background-image: url(https://images.unsplash.com/photo-1585773816589-99af4e1711c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1223&q=80);
 background-position: center;
     background-size: cover;
 
@@ -85,10 +96,10 @@ background-position: center;
 .header-section{
     width: 100%;
  max-width: 1200px;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
 flex-direction: row;
-
+height: 100%;
     position: relative;
     z-index: 20;
     display: flex;
@@ -100,7 +111,7 @@ flex-direction: row;
 
 .header-content{
 display: block;
-     max-width: 400px;
+
     padding: 5rem 3rem; 
     align-items: center;
     justify-content: center;
@@ -110,7 +121,8 @@ display: block;
 .header-content p{
     text-align: right;
     color: white;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    line-height: 0;
     /* padding-right: 2rem; */
 
 
@@ -130,7 +142,7 @@ top: 0;
 left: 0;
 height: 100%;   
 width: 100%;
-background-color: rgba(0,0,0,0.4); 
+background-color: rgba(0,0,0,0.6); 
 }
 
 nav{
@@ -360,27 +372,28 @@ filter: invert(1);
 }
 .menu-btn-container{
     display: flex;
-    justify-content: end;
-    padding: 3rem 0rem;
+    justify-content: center;
+    padding: 5rem 0 0 0;
 }
 .menu-btn{
     border: hidden;
     border-style: solid;
     border-width: 1px;
     border-color:  white;
-border-radius: 5px;
+
 cursor: pointer;
 font-weight: bold;
 padding: 1rem 1.5rem;
 text-align: center;
-color: black;
+color: rgb(255, 255, 255);
 text-transform: uppercase;
 transition: 300ms;
+background-color: transparent;
 }
 .menu-btn:hover{
 
     color: #fff;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.5);
 }
 .content-desktop{
    
