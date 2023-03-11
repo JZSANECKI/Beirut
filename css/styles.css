@@ -17,11 +17,13 @@ h1,h2{
 
 h1{
 /* font-weight: lighter; */
+text-align: right;
     color: #fff;
 }
 h2{
     padding: 1rem;
     color: black;
+    text-align: center;
 }
 p,h3,h4{
     font-family: 'Montserrat', sans-serif;
@@ -65,7 +67,10 @@ justify-content: center;
     background-color:deeppink;
 }
 header{
-    min-height: fit-content;
+
+
+height: fit-content;
+
     position: relative;
 display: flex;
 flex-direction: column;
@@ -81,12 +86,18 @@ background-position: center;
     width: 100%;
  max-width: 1200px;
     justify-content: start;
+    align-items:flex-end;
+    align-items:flex-end;
+    align-items:flex-end;
     position: relative;
     z-index: 20;
     display: flex;
     /* height: calc(100% - 80px); */
     
 }
+
+
+
 .header-content{
 display: block;
      max-width: 400px;
@@ -97,9 +108,12 @@ display: block;
 
 }
 .header-content p{
+    text-align: right;
     color: white;
-    font-size: 1rem;
-    /* padding-right: 3rem; */
+    font-size: 1.2rem;
+    /* padding-right: 2rem; */
+
+
 
 }
 .header-content-mobile{
@@ -137,7 +151,7 @@ nav a{
    padding: 1rem 0rem 0rem 3rem;
 }
 .logo-mobile{
-    width: 30%;
+    width: 30vw;
     padding: 1rem 0 0.5rem 0;
 }
 .nav-logo{
@@ -263,6 +277,28 @@ font-size: 3rem;
     padding: 0 0.5rem;
     vertical-align: text-top;
 }
+.about-us-section{
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    padding: 1rem;
+}
+.about-us-section h3{
+    padding-top: 1rem;
+}
+.about-us{
+
+max-width: 600px;
+width: 100%;
+overflow: hidden;
+
+/* width: 50%; */
+ 
+}
+.about-us img{
+width: 100%;
+
+}
 .section{
     padding-top: 20px;
     min-height: 80vh;
@@ -296,7 +332,7 @@ color: black;
     border-color: grey;
     background-color: rgb(255, 255, 255);
     position: fixed;
-    bottom: 150px;
+    bottom: 20px;
     right: 0px;
     transition:300ms;
     transform: translateX(100px);
@@ -308,7 +344,7 @@ z-index: 100;
 
 }
 .home-btn-up{
-    transform: translateX(-50px);
+    transform: translateX(-10%);
     opacity: 1;
     transition: transform 1s, opacity 1s, filter 0.3s;
     transition-delay:transform 0.5s, opacity 0.5s;
@@ -325,7 +361,7 @@ filter: invert(1);
 .menu-btn-container{
     display: flex;
     justify-content: end;
-    padding: 3rem 1rem;
+    padding: 3rem 0rem;
 }
 .menu-btn{
     border: hidden;
@@ -357,17 +393,28 @@ transition: 300ms;
 
 @media (max-width: 992px) {
 
+
+    h1{
+        text-align: center;
+    }
 .header-content{
-    padding: 3rem;
+width: 100%;
+max-width: none;
 
 }
-.home-btn:hover{
+.header-content p{
+    text-align: center;
+}
+.menu-btn-container{
+    justify-content: center;
+}
+/* .home-btn:hover{
     filter: invert(0);
     
     }  
     .menu-btn-container{
         padding: 2rem;
-    } 
+    }  */
 
 }
 
@@ -377,6 +424,9 @@ transition: 300ms;
     }
     .header-content{
 
+    }
+    .about-us-section{
+        flex-direction: column;
     }
 
 }
@@ -388,8 +438,9 @@ transition: 300ms;
         padding: 0 0 1rem 0;
     }
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
+        padding-bottom: 5px;
     }
     h3{
         font-size: 2rem;
@@ -398,7 +449,7 @@ transition: 300ms;
         font-size: 1.2rem;
     }
     p{
-        text-align: center;
+
     }
 
 .call-btn{
@@ -409,12 +460,19 @@ transition: 300ms;
     transform: translateX(-20px);
 }
 .header-section{
-    max-width: none;
+
     display: flex;
     flex-direction: column;
     /* padding: 1rem; */
     height: 100%;
 }
+.header-section p{
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+}
+
+
 
 
 .nav2-desktop{
@@ -440,12 +498,15 @@ transition: 300ms;
 }
 header{
     height: 100vh;
-    max-height: none;
+
     background-image: url("../img/pita_front_mobile.jpg");
     background-position: center;
 }
 .header-content{
+
+    /* margin: auto; */
     padding: 8rem 1rem 2rem 1rem;
+
 }
 .content-desktop{
 display: none;
@@ -454,6 +515,7 @@ display: none;
     display: inline;
     text-align: center;
     padding: 0 ;
+    width: 60vw;
 }
 .content-mobile a{
     color: white;
@@ -469,7 +531,7 @@ justify-content: center;
     bottom: 10px;
     right: 0px;
     transition:300ms;
-    transform: translateX(-0px);
+    transform: translateX(0px);
 }
 .logo-f{
     width: 30%;
@@ -491,7 +553,11 @@ footer{
 }
 @media (max-width: 280px){
     header{
+        height: 100vh;
         height: fit-content;
+        height: 100vh;
+        height: fit-content;
+        height: 100vh;
     }
 
     h3{
