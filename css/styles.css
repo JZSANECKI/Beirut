@@ -81,7 +81,7 @@ header{
 
 
 height: 100vh;
-
+max-height: 1000px;
     position: relative;
 display: flex;
 flex-direction: column;
