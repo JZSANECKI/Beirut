@@ -120,7 +120,7 @@ display: block;
 }
 .header-content p{
     text-align: right;
-    color: white;
+    color:darkgoldenrod;
     font-size: 2rem;
     line-height: 0;
     /* padding-right: 2rem; */
@@ -154,13 +154,14 @@ nav{
     height: 80px;
     z-index: 200;
     color: #fff;
+    padding: 2rem 0;
 }
 nav a{
     color: black;
 }
 .logo-w{
    height: 80%; 
-   padding: 1rem 0rem 0rem 3rem;
+   padding: 0rem 0rem 0rem 3rem;
 }
 .logo-mobile{
     width: 30vw;
