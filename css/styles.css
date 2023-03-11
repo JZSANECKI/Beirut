@@ -368,19 +368,20 @@ filter: invert(1);
     border-style: solid;
     border-width: 1px;
     border-color:  white;
-border-radius: 5px;
+/* border-radius: 5px; */
 cursor: pointer;
 font-weight: bold;
 padding: 1rem 1.5rem;
 text-align: center;
-color: black;
+color: rgb(255, 255, 255);
 text-transform: uppercase;
 transition: 300ms;
+background-color: transparent;
 }
 .menu-btn:hover{
 
     color: #fff;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.5);
 }
 .content-desktop{
    
