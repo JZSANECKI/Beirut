@@ -11,6 +11,104 @@ background-color: rgb(255, 255, 255);
 
 font-family: sans-serif;
 }
+
+
+
+.lewy{
+  width:100vw;
+    height:100%;
+    background-image: url(../img/wood1.jpg);
+background-size: cover;
+  position:relative;
+
+}
+.prawy{
+    width:100vw;
+    height:100%;
+    background-image: url(../img/wood2.jpg);
+background-size:cover;
+  position:absolute;
+  top:0;
+  left:0;
+    transition: width 2s;
+  overflow:hidden;
+        animation-name: slider;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-delay:1s;
+  animation-fill-mode: forwards;
+}
+.prawy-add,
+.lewy-add{
+  width:500px;
+  height:500px;
+  position:absolute;
+  top: 60%;
+left:50vw;
+  border-radius:50%;
+transform: translateX(-50%); 
+
+
+ 
+}
+.prawy-add{
+
+
+}
+.prawy-add p{
+  animation-name:appear;
+  animation-delay:3s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+.lewy-add p{
+  animation-name:appear;
+  animation-delay:4s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+.lewy-add{
+
+
+}
+.lewy-add2,
+.prawy-add2{
+  position:absolute;
+}
+.prawy-add2{
+  left:10vw;
+  top:100px;
+  width:300px;
+  height:100px;
+  background-color:yellow;
+}
+.lewy-add2{
+  right:10vw;
+  top:100px;
+  width:300px;
+  height:100px;
+  background-color:yellow;
+}
+.prawy-add2,
+.lewy-add2{
+  animation-name:appear;
+  animation-duration:1s;
+  animation-delay:4.8s;
+  opacity:0;
+    animation-fill-mode: forwards;
+}
+@keyframes appear {
+  0% {opacity:0}
+  100%{opacity:1}
+  
+}
+
+@keyframes slider {
+  0%   {width: 100vw;}
+  35%  {width: 0vw;}
+  75%  {width: 80vw;}
+  100% {width: 50vw;}
+}
 footer i{
     font-size: 1rem;
 }
@@ -20,16 +118,16 @@ h1,h2{
 }
 
 h1{
-font-size: 13vw;
+font-size: 10vw;
 text-align: center;
 
-
+text-shadow: 5px 5px 2px rgb(68, 255, 22);
 background-size:cover;
 background-position:bottom;
 background-clip:text;
 -webkit-background-clip:text;
 
-color: white;
+color: rgb(255, 34, 34);
 
 }
 h2{
@@ -81,17 +179,11 @@ justify-content: center;
 }
 header{
 overflow: hidden;
-min-height: fit-content;
+
 height: 100vh;
 max-height: 1000px;
     position: relative;
-display: flex;
-flex-direction: column;
-align-items: center;
-    /* height: 100vh; */
-    background-image: url(../img/pita_front.jpg);
-background-position: center;
-    background-size: cover;
+
 
   
 }
@@ -135,7 +227,7 @@ font-weight: bold;
     -webkit-background-clip:text;
     /* color: rgba(255,255,255,0.1); */
     /* color: rgba(0,0,0,0.5); */
-    color: goldenrod;
+    color: rgb(35, 182, 6);
 
 }
 .header-content-mobile{
