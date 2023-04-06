@@ -39,6 +39,6 @@ if (scrollY >= 300){
 else {
     homeBtn.classList.remove('home-btn-up')
 }
-console.log(scrollY)
+// console.log(scrollY)
 
 }

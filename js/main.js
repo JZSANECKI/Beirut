@@ -4,6 +4,7 @@ const showInfo = id => {
     
    console.log(id); 
 
+
    menuSections.forEach(section => section.style.display ='none')
   
    menuTabs.forEach(tab => tab.classList.remove('menu-tab-active'))
@@ -13,3 +14,12 @@ const showInfo = id => {
    currentActiveButton.classList.add('menu-tab-active')
  
 }
+const box = document.querySelector('header');
+const width = box.offsetWidth;
+const headerCenter = document.querySelector('.prawy-add')
+
+const center = () =>{
+   headerCenter.style.left = width/2 + "px"
+}
+center ()
+console.log(width)
