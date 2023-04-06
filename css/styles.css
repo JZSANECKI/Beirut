@@ -144,14 +144,14 @@ transform: translateX(-50%);
 
 }
 .napkin-left{
-    scale:0.4;
-    left:-600px;
-    bottom:-600px;
-    animation-name: napkin-slide-left;
+
+    left:200px;
+    bottom:-90px;
+    /* animation-name: napkin-slide-left;
     animation-duration: 0.7s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-out; */
     transform: rotateX(180deg);
 }
 .napkin-right{
@@ -174,28 +174,30 @@ z-index: 0;
     100%{bottom:-400px}   
 }
 .fork-left{
-    scale: 0.3;
-    left:220px;
-    bottom:-300px;
+
+    left:300px;
+    bottom:0px;
     transform: rotateZ(10deg);
 }
 .knife-left{
-scale: 0.3;
-left:280px;
-bottom:-400px;
+
+left:360px;
+bottom: -50px;
 transform: rotateZ(-2deg);
 }
 .fork-right{
-    scale: 0.3;
-    right:30%;
-    bottom:-380px;
+
+    right:50%;
+    bottom:-50px;
     transform: rotateZ(-5deg);
+    transform: translateX(230px);
 }
 .knife-right{
-scale: 0.3;
-right:28%;
-bottom:-440px;
+
+right:50%;
+bottom: -100px;
 transform: rotateZ(3deg);
+transform: translateX(280px);
 }
 .cola{
     scale:0.07;
@@ -281,9 +283,10 @@ main,
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* max-width: 1600px; */
 }
 .wrapper{
-    max-width: 1200px;
+    max-width: 1600px;
 width: 100%;
     border-radius: 10px;
 
@@ -322,7 +325,7 @@ max-height: 800px;
 }
 .header-section{
     width: 100%;
- max-width: 1200px;
+ max-width: 1600px;
     justify-content: center;
     align-items: center;
 flex-direction: row;
@@ -428,7 +431,7 @@ display: block;
     background-color: white;
     text-align: center;
     transition: 300ms;
-    max-width: 1200px;
+    max-width: 1600px;
     border-radius: 5px;
 }
 .nav2 a{
@@ -492,7 +495,7 @@ font-size: 3rem;
 .menu{
     /* width: 100vw; */
     scroll-margin-top: 140px;
-    max-width: 1200px;
+    max-width: 1600px;
     padding: 0 2rem;
 
 }
@@ -526,7 +529,7 @@ font-size: 3rem;
 }
 .about-us-section{
     display: flex;
-    max-width: 1200px;
+    max-width: 1600px;
     align-items: center;
     padding: 1rem;
 }
@@ -550,7 +553,7 @@ width: 100%;
 .contact-section{
     flex-wrap:wrap;
     display: flex;
-
+width: 100%;
     max-width: 1200px;
     justify-content: center;
     align-items: start;
@@ -563,7 +566,7 @@ width: 100%;
     flex:1;
 flex-direction: column;
     padding: 0 1rem; 
-    max-width: 576px;
+    max-width: 1000px;
 }
 .section{
     padding-top: 20px;
