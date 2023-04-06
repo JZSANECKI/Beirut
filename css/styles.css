@@ -17,7 +17,7 @@ font-family: sans-serif;
 .lewy{
   width:100%;
     height:100%;
-    background-image: url(../img/wood1.jpg);
+    background-image: url(../img/wood2.webp);
 background-size: auto;
   position:relative;
 
@@ -26,7 +26,7 @@ background-size: auto;
 .prawy{
     width:100%;
     height:100%;
-    background-image: url(../img/wood2.jpg);
+    background-image: url(../img/wood3.webp);
 background-size:auto;
   position:absolute;
   top:0;
@@ -55,7 +55,7 @@ transform: translateX(-50%);
 
 }
 .prawy-add{
-    
+
 }
 .prawy-add p{
   animation-name:appear;
@@ -184,7 +184,7 @@ overflow: hidden;
 max-width: 1600px;
 margin:0 auto;
 height: 100vh;
-max-height: 1000px;
+max-height: 900px;
     position: relative;
 
 
