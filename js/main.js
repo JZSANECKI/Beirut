@@ -16,7 +16,7 @@ const showInfo = id => {
 }
 const box = document.querySelector('header');
 const width = box.offsetWidth;
-const headerCenter = document.querySelector('.prawy-add')
+const headerCenter = document.querySelector('.lewy-add')
 
 const center = () =>{
    headerCenter.style.left = width/2 + "px"
