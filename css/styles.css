@@ -56,6 +56,7 @@ background-size:auto;
 .lewy p,
 .prawy p,
 .claim p
+
 {
     font-family: 'Berkshire Swash', cursive;
     font-size: 3rem;
@@ -74,7 +75,8 @@ transform: translateX(-50%);
 }
 .lewy-add p ,
 .prawy-add p,
-.claim p{
+.claim p
+{
     font-size: 10rem;
     position: absolute;
     text-align: center;
@@ -490,6 +492,7 @@ nav{
 }
 .nav-menu{
     position: absolute;
+    display: flex;
    margin-top:auto;
    /* height: 60px; */
    width: 100%;
@@ -509,10 +512,40 @@ transition: background-color 300ms, color 300ms;
 }
 .nav-menu a:hover{
 
-    background-color: rgba(218,165,32,0.5);
+    background-color:#05AF4E;
 } 
 .nav-menu ul{
 display: block;
+}
+.nav-menu-right{
+    padding-right:2rem;
+    margin:auto 0;
+    text-align: right;
+    flex-grow: 1;
+}
+header button{
+
+    font-size: 1rem;
+
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color:white;
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    left:50%;
+    bottom:40%;
+    transform: translateX(-50%);
+    z-index: 300;
+
+}
+button p{
+    
+    padding:1rem 2rem;
+    font-family: 'Berkshire Swash', cursive;
+    color:white;
+    text-shadow: -5px -5px 5px rgba(0, 0, 0, 0.695);
+    font-size: 4rem;
 }
 .nav2{
     position: sticky;
