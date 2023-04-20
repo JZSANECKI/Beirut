@@ -857,22 +857,22 @@ footer {
 .lewy-add-mobile {
   position: absolute;
   top: 15%;
-  left: 10%;
+  left: 5%;
   z-index: 30;
 }
 .prawy-add-mobile {
   position: absolute;
-  bottom: 5%;
-  right: 10%;
+  bottom: 10%;
+  right: 5%;
   z-index: 30;
 }
 .lewy-add-mobile p,
 .prawy-add-mobile p {
   font-family: "Berkshire Swash", cursive;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: white;
   text-align: center;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.695);
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 992px) {
@@ -951,11 +951,11 @@ left:50%;
   .fork-right,
   .knife-right,
   .napkin-right,
-  .cola,
   .pita,
   .pizza2 {
     display: none;
   }
+  .cola,
   .fork-left,
   .knife-left,
   .sos-left,
@@ -965,10 +965,24 @@ left:50%;
     animation-name: none;
   }
   .hummus {
-    right: -50%;
+    right: -15%;
+    scale: 0.7;
+    top:15%;
   }
   .sos-left {
-    left: 10%;
+    left: -10%;
+    top: 65%;
+    scale: 0.8;
+  }
+  .sos-right {
+    right: 10%;
+    top: 30%;
+    scale: 0.7;
+  }
+  .cola{
+    left:-40%;
+    top:-2%;
+    scale:0.8;
   }
   .nav-menu{
     justify-content: space-between;
@@ -983,7 +997,16 @@ padding: 0.5rem;
     height:100vh;
     top:0;
   }
+.menu-cta{
+animation-name: none;
+bottom:50%;
+left:50%;
+transform: translateY(100%) translateX(-50%);
 
+}
+.menu-cta p{
+font-size: 1rem;
+}
   h1 {
     background-image: none;
     font-size: 20vw;
