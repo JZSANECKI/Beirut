@@ -143,6 +143,7 @@ body {
   100% {
     width: 50%;
   }
+
 }
 .cola,
 .pizza2,
@@ -590,8 +591,8 @@ nav {
   text-align: right;
   flex-grow: 1;
 }
-.bhlogo{
-    padding:1rem
+.bhlogo {
+  padding: 1rem;
 }
 header button {
   font-size: 1rem;
@@ -663,10 +664,14 @@ button p {
   width: 30px;
   padding: 0 5px;
 }
-.menu-btn-mobile{
-    position: absolute;
-    right:20%;
-    z-index: 500;
+.menu-btn-mobile {
+/* width:50vw; */
+  right: 18%;
+  top: 34%;
+  z-index: 500;
+}
+.menu-btn-mobile img {
+  /* width: 150%; */
 }
 .icon-mobile-section a {
   line-height: 0px;
@@ -843,24 +848,25 @@ footer {
 .content-mobile {
   display: none;
 }
-.lewy-add-mobile{
-    position: absolute;
-    top:15%;
-    left:10%;
-    z-index: 30;
+.lewy-add-mobile {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  z-index: 30;
 }
-.prawy-add-mobile{
-    position: absolute;
-    bottom:5%;
-    right:10%;
-    z-index: 30;
+.prawy-add-mobile {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  z-index: 30;
 }
-.lewy-add-mobile p,.prawy-add-mobile p{
-    font-family: "Berkshire Swash", cursive;
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.695);
+.lewy-add-mobile p,
+.prawy-add-mobile p {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.695);
 }
 
 @media (max-width: 992px) {
@@ -893,32 +899,48 @@ footer {
 }
 
 @media (max-width: 576px) {
-.mobile{
+  .mobile {
     display: block;
-}
-.desktop{
-    display:none;
-}
+  }
+  .desktop {
+    display: none;
+  }
 
   main,
   footer {
     display: none;
   }
-  .pizza,.kebab {
-    /* width: 200%; */
-    top:50%;
-transform: translateY(-50%) rotate(25deg);
-animation: rotation 20s infinite linear;
-
+  .pizza{
+    position: absolute;
+top:50%;
+left:50%;
+  z-index: 500;
+  animation: rotation-pizza 20s infinite linear;
   }
-  @keyframes rotation {
+  
+  .kebab {
+    /* width: 200%; */
+    top: 50%;
+
+    /* transform: translateY(-50%) rotate(25deg); */
+    animation: rotation-kebab 20s infinite linear;
+  }
+  @keyframes rotation-kebab {
     from {
-        transform:translateY(-50%) rotate(0deg);
+      transform: translateY(-40%) rotate(0deg);
     }
     to {
-        transform:translateY(-50%) rotate(-359deg);
+      transform: translateY(-40%) rotate(-359deg);
     }
-}
+  }
+  @keyframes rotation-pizza {
+    from {
+      transform: translateX(-50%) translateY(-40%) rotate(0deg);
+    }
+    to {
+      transform: translateX(-50%) translateY(-40%) rotate(-359deg);
+    }
+  }
   .napkin-left,
   .fork-right,
   .knife-right,
@@ -936,16 +958,25 @@ animation: rotation 20s infinite linear;
   .hummus {
     animation-name: none;
   }
-  .hummus{
-    right:0;
+  .hummus {
+    right: -50%;
   }
   .sos-left {
     left: 10%;
   }
-  .bhlogo{
-    padding:0.5rem;
-    width:70%;
-}
+  .nav-menu{
+    justify-content: space-between;
+  }
+  .bhlogo {
+width: 50%;
+padding: 0.5rem;
+  }
+
+  .prawy-add,.lewy-add{
+    position: absolute;
+    height:100vh;
+    top:0;
+  }
 
   h1 {
     background-image: none;
