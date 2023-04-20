@@ -483,7 +483,7 @@ main,
   background-color: deeppink;
 }
 header {
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   max-width: 1600px;
   margin: 0 auto;
@@ -590,6 +590,9 @@ nav {
   text-align: right;
   flex-grow: 1;
 }
+.bhlogo{
+    padding:1rem
+}
 header button {
   font-size: 1rem;
 
@@ -659,6 +662,11 @@ button p {
 .nav2-mobile img {
   width: 30px;
   padding: 0 5px;
+}
+.menu-btn-mobile{
+    position: absolute;
+    right:20%;
+    z-index: 500;
 }
 .icon-mobile-section a {
   line-height: 0px;
@@ -835,6 +843,25 @@ footer {
 .content-mobile {
   display: none;
 }
+.lewy-add-mobile{
+    position: absolute;
+    top:15%;
+    left:10%;
+    z-index: 30;
+}
+.prawy-add-mobile{
+    position: absolute;
+    bottom:5%;
+    right:10%;
+    z-index: 30;
+}
+.lewy-add-mobile p,.prawy-add-mobile p{
+    font-family: "Berkshire Swash", cursive;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.695);
+}
 
 @media (max-width: 992px) {
   h1 {
@@ -909,9 +936,16 @@ animation: rotation 20s infinite linear;
   .hummus {
     animation-name: none;
   }
+  .hummus{
+    right:0;
+  }
   .sos-left {
     left: 10%;
   }
+  .bhlogo{
+    padding:0.5rem;
+    width:70%;
+}
 
   h1 {
     background-image: none;
