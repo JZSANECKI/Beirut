@@ -10,6 +10,9 @@ body {
 
   font-family: sans-serif;
 }
+.mobile{
+    display: none;
+}
 
 .claim {
   opacity: 0%;
@@ -144,6 +147,9 @@ body {
     width: 50%;
   }
 
+}
+.pizza{
+   
 }
 .cola,
 .pizza2,
@@ -665,13 +671,13 @@ button p {
   padding: 0 5px;
 }
 .menu-btn-mobile {
-/* width:50vw; */
-  right: 18%;
-  top: 34%;
+padding:0 2rem 0 0;
   z-index: 500;
 }
 .menu-btn-mobile img {
-  /* width: 150%; */
+  width: 150%;
+  height: 100%;
+
 }
 .icon-mobile-section a {
   line-height: 0px;
